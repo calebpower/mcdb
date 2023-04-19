@@ -11,6 +11,28 @@ This plugin currently supports the following database servers.
 - MariaDB
 - MySQL
 
+## Building
+
+You can build this software with Gradle, provided you have the proper build
+environment installed. We recommend OpenJDK 17. The Gradle Wrapper has been
+included in this project. Although there is discourse on the subject, it has
+been included to ensure the proper Gradle version is adhered to and to make it
+easier to build the software.
+
+On *NIX-like systems, you can use the following to build the project.
+
+```bash
+./gradlew build publishToMavenLocal
+```
+
+Likewise, on *doze systems, you can use the following.
+
+```bash
+gradlew.bat build publishToMavenLocal
+```
+
+The above should yield the plugin JAR at `build/libs/McDbDriver.jar`.
+
 ## Installation
 
 This plugin was designed for Spigot v1.19.4. You'll want to ensure that you're
