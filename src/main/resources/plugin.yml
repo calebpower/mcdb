@@ -1,0 +1,5 @@
+name: McDbDriver
+version: 0.0.1
+api-version: 1.19
+description: Thread pool provider for Spigot
+main: com.github.calebpower.mcdb.McDbDriver

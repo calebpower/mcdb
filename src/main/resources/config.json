@@ -1,0 +1,18 @@
+{
+  "databases": [
+    {
+      "label": "first_database",
+      "location": "127.0.0.1:3306/db",
+      "username": "myuser",
+      "password": "password1!",
+      "isSecure": true
+    },
+    {
+      "label": "second_database",
+      "location": "127.0.1.1:3306/db",
+      "username": "anotheruser",
+      "password": "passphrase2@",
+      "isSecure": false
+    }
+  ]
+}

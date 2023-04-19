@@ -1,0 +1,41 @@
+plugins {
+  id "com.github.johnrengelman.shadow" version "7.1.0"
+}
+
+apply plugin: 'java-library'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+repositories {
+  jcenter()
+  maven { url "https://jitpack.io" }
+  maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+}
+
+group = prjGroup
+version = prjVer
+sourceCompatibility = prjCompat
+targetCompatibility = prjCompat
+
+dependencies {
+  implementation 'com.zaxxer:HikariCP:5.0.1'
+  implementation 'commons-io:commons-io:2.11.0'
+  implementation 'org.json:json:20230227'
+  compileOnly 'org.spigotmc:spigot-api:1.19.4-R0.1-SNAPSHOT'
+}
+
+eclipse {
+  classpath {
+    downloadJavadoc = true
+    downloadSources = true
+  }
+}
+
+shadowJar {
+  archiveName = "$baseName.$extension"
+}
+
+artifacts {
+  archives shadowJar
+}
