@@ -39,3 +39,11 @@ shadowJar {
 artifacts {
   archives shadowJar
 }
+
+publishing {
+  publications {
+    maven(MavenPublication) {
+      from components.java
+    }
+  }
+}
