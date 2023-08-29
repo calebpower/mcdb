@@ -159,6 +159,14 @@ public class McDbDriver extends McDbApi {
       return true;
     }
   }
+
+  @Override public String getDatabaseName(String label) {
+    synchronized(databases) {
+      if(databases.containsKey(label))
+        return databases.get(label).getName();
+    }
+    return null;
+  }
   
   @Override public Connection connect(String label) throws SQLException {
     synchronized(databases) {
