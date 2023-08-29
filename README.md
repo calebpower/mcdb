@@ -35,7 +35,7 @@ The above should yield the plugin JAR at `build/libs/McDbDriver.jar`.
 
 ## Installation
 
-This plugin was designed for Spigot v1.19.4. You'll want to ensure that you're
+This plugin was designed for Spigot v1.20.1. You'll want to ensure that you're
 using Java 17 LTS. Like normal, just put `McDbDriver.jar` in your `plugins`
 folder and start the server. On first launch, a default `config.json` file will
 be created and the plugin will automatically disable itself. You can configure
