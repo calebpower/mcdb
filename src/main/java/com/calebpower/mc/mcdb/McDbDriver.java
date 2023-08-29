@@ -1,4 +1,4 @@
-package com.github.calebpower.mcdb;
+package com.calebpower.mc.mcdb;
 
 import java.io.File;
 import java.io.IOException;
@@ -158,6 +158,14 @@ public class McDbDriver extends McDbApi {
       databases.remove(label);
       return true;
     }
+  }
+
+  @Override public String getDatabaseName(String label) {
+    synchronized(databases) {
+      if(databases.containsKey(label))
+        return databases.get(label).getName();
+    }
+    return null;
   }
   
   @Override public Connection connect(String label) throws SQLException {

@@ -1,4 +1,4 @@
-package com.github.calebpower.mcdb;
+package com.calebpower.mc.mcdb;
 
 import java.sql.Connection;
 import java.sql.SQLException;

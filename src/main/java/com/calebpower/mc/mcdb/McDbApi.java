@@ -1,4 +1,4 @@
-package com.github.calebpower.mcdb;
+package com.calebpower.mc.mcdb;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -45,6 +45,16 @@ public abstract class McDbApi extends JavaPlugin {
    * @return {@code true} iff the database was successfully removed
    */
   public abstract boolean removeDatabase(String label);
+
+  /**
+   * Retrieves the name of the database associated with the provided identifier,
+   * perhaps for the purposes of populating database script templates.
+   *
+   * @param database the unique identification of the database in question
+   * @return a {@link String} denoting the name of the database or
+   *         {@code null} if no such database was found
+   */
+  public abstract String getDatabaseName(String database);
   
   /**
    * Retrieves a connection from the specified database.
