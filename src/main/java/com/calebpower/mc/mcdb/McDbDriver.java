@@ -1,4 +1,4 @@
-package com.github.calebpower.mc.mcdb;
+package com.calebpower.mc.mcdb;
 
 import java.io.File;
 import java.io.IOException;
