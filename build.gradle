@@ -11,6 +11,7 @@ repositories {
   jcenter()
   maven { url "https://jitpack.io" }
   maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+  mavenCentral()
 }
 
 group = prjGroup
@@ -19,10 +20,10 @@ sourceCompatibility = prjCompat
 targetCompatibility = prjCompat
 
 dependencies {
-  implementation 'com.zaxxer:HikariCP:5.0.1'
-  implementation 'commons-io:commons-io:2.13.0'
-  implementation 'org.json:json:20230618'
-  compileOnly 'org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT'
+  implementation 'com.zaxxer:HikariCP:5.1.0'
+  implementation 'commons-io:commons-io:2.16.1'
+  implementation 'org.json:json:20231013'
+  compileOnly 'org.spigotmc:spigot-api:1.21.1-R0.1-SNAPSHOT'
 }
 
 eclipse {
