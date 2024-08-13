@@ -14,7 +14,7 @@ This plugin currently supports the following database servers.
 ## Building
 
 You can build this software with Gradle, provided you have the proper build
-environment installed. We recommend OpenJDK 17. The Gradle Wrapper has been
+environment installed. We recommend OpenJDK 21. The Gradle Wrapper has been
 included in this project. Although there is discourse on the subject, it has
 been included to ensure the proper Gradle version is adhered to and to make it
 easier to build the software.
@@ -36,7 +36,7 @@ The above should yield the plugin JAR at `build/libs/McDbDriver.jar`.
 ## Installation
 
 This plugin was designed for Spigot v1.20.1. You'll want to ensure that you're
-using Java 17 LTS. Like normal, just put `McDbDriver.jar` in your `plugins`
+using Java 21 LTS. Like normal, just put `McDbDriver.jar` in your `plugins`
 folder and start the server. On first launch, a default `config.json` file will
 be created and the plugin will automatically disable itself. You can configure
 the plugin two different ways.
